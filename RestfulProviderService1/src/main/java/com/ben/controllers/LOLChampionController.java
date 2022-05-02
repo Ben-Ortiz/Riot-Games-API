@@ -10,7 +10,7 @@ import com.ben.model.LOLChampion;
 @RequestMapping("/leagueOfLegends")
 public class LOLChampionController {
 	
-	//sanity check for my post to work
+	//sanity check for my get request to work
 	@GetMapping("/championsTest")
 	public String getChampion() {
 		LOLChampion lolChampion = new LOLChampion(1, "Viktor");
