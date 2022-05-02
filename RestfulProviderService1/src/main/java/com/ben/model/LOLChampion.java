@@ -2,8 +2,13 @@ package com.ben.model;
 
 import java.util.Objects;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class LOLChampion {
 	
+	@Id
 	private long id;
 	private String champName;
 	
