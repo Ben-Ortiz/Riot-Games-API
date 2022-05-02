@@ -13,7 +13,7 @@ public class LOLChampionServiceImpl implements LOLChampionService {
 
 	@Autowired
 	private LOLChampionRepository lcRepository;
-	
+
 	@Override
 	public List<LOLChampion> getLOLChampions() {
 		return lcRepository.findAll();
