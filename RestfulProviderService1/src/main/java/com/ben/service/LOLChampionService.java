@@ -10,4 +10,5 @@ import com.ben.model.LOLChampion;
 public interface LOLChampionService {
 
 	List<LOLChampion> getLOLChampions();
+	LOLChampion saveLOLChampion(LOLChampion lolChampion);
 }

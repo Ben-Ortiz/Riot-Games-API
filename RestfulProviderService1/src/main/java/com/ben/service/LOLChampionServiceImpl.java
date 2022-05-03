@@ -19,4 +19,9 @@ public class LOLChampionServiceImpl implements LOLChampionService {
 		return lcRepository.findAll();
 	}
 
+	@Override
+	public LOLChampion saveLOLChampion(LOLChampion lolChampion) {
+		return lcRepository.save(lolChampion);
+	}
+
 }
