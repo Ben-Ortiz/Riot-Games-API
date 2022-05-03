@@ -11,4 +11,7 @@ public interface LOLChampionService {
 
 	List<LOLChampion> getLOLChampions();
 	LOLChampion saveLOLChampion(LOLChampion lolChampion);
+	LOLChampion getSingleChampion(Long id);
+	void deleteChampion(Long id);
+	LOLChampion updateLOLChampion(LOLChampion lolChampion);
 }
