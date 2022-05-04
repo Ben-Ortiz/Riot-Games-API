@@ -12,13 +12,12 @@ import com.ben.repository.ValoAgentRepository;
 
 /**
  * 
- * @author benor
- * method implementations from ValoAgentService
- * this is where methods are made for requests.
+ * @author benor method implementations from ValoAgentService this is where
+ *         methods are made for requests.
  */
 @WebService(endpointInterface = "com.ben.service.ValoAgentService")
-public class ValoAgentServiceImpl implements ValoAgentService{
-	
+public class ValoAgentServiceImpl implements ValoAgentService {
+
 	@Autowired
 	private ValoAgentRepository valoAgentRepository;
 
@@ -32,7 +31,7 @@ public class ValoAgentServiceImpl implements ValoAgentService{
 		return valoAgentRepository.save(valoAgent);
 	}
 
-	//Sanity check method my soap service works
+	// Sanity check method my soap service works
 	@WebMethod
 	public String test() {
 		return "a string";
@@ -41,14 +40,12 @@ public class ValoAgentServiceImpl implements ValoAgentService{
 	@WebMethod
 	public void deleteValoAgentById(Long Id) {
 		valoAgentRepository.deleteById(Id);
-		
+
 	}
 
 	@WebMethod
 	public ValoAgent updateValoAgent(ValoAgent valoAgent) {
 		return valoAgentRepository.save(valoAgent);
 	}
-	
-	
 
 }
