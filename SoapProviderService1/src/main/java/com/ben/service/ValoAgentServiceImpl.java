@@ -30,6 +30,11 @@ public class ValoAgentServiceImpl implements ValoAgentService{
 	public ValoAgent save(ValoAgent valoAgent) {
 		return valoAgentRepository.save(valoAgent);
 	}
+
+	@Override
+	public String test() {
+		return "a string ";
+	}
 	
 	
 

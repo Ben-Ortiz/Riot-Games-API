@@ -14,5 +14,6 @@ public interface ValoAgentService {
 	
 	public List<ValoAgent> findAll();
 	public ValoAgent save (ValoAgent valoAgent);
+	public String test();
 
 }
