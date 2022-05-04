@@ -2,20 +2,33 @@ package com.ben.service;
 
 import java.util.List;
 
+import javax.jws.WebMethod;
+import javax.jws.WebService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.ben.model.ValoAgent;
 import com.ben.repository.ValoAgentRepository;
 
+/**
+ * 
+ * @author benor
+ * method implementations from ValoAgentService
+ */
+@WebService(endpointInterface = "com.ben.service.ValoAgentService")
 public class ValoAgentServiceImpl implements ValoAgentService{
 	
 	@Autowired
 	private ValoAgentRepository valoAgentRepository;
 
-	@Override
+	@WebMethod
 	public List<ValoAgent> findAll() {
-		// TODO Auto-generated method stub
-		return null;
+		return this.valoAgentRepository.findAll();
+	}
+
+	@WebMethod
+	public ValoAgent save(ValoAgent valoAgent) {
+		return valoAgentRepository.save(valoAgent);
 	}
 	
 	

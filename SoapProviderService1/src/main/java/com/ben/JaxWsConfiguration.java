@@ -1,10 +1,14 @@
 package com.ben;
 
+import javax.xml.ws.Endpoint;
 import org.apache.cxf.bus.spring.SpringBus;
+import org.apache.cxf.jaxws.EndpointImpl;
 import org.apache.cxf.transport.servlet.CXFServlet;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+
+import com.ben.service.ValoAgentServiceImpl;
 
 @Configuration
 public class JaxWsConfiguration {
@@ -28,6 +32,20 @@ public class JaxWsConfiguration {
 	}
 	
 	
+	@Bean
+	public ValoAgentServiceImpl valoAgentServiceImple() {
+		return new ValoAgentServiceImpl();
+	}
+	
+	@Bean
+	public Endpoint endpoint() {
+		EndpointImpl endpoint = new EndpointImpl(springBus(), valoAgentServiceImple());
+		/*
+		 * expose endpoint with address
+		 */
+		endpoint.publish("/valoagent-service");
+		return endpoint;
+	}
 	
 	
 
