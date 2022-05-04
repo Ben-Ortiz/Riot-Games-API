@@ -14,6 +14,7 @@ import com.ben.repository.ValoAgentRepository;
  * 
  * @author benor
  * method implementations from ValoAgentService
+ * this is where methods are made for requests.
  */
 @WebService(endpointInterface = "com.ben.service.ValoAgentService")
 public class ValoAgentServiceImpl implements ValoAgentService{
@@ -31,7 +32,7 @@ public class ValoAgentServiceImpl implements ValoAgentService{
 		return valoAgentRepository.save(valoAgent);
 	}
 
-	@Override
+	@WebMethod
 	public String test() {
 		return "a string";
 	}

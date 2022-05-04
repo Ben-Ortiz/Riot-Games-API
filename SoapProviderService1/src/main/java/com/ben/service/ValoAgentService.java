@@ -8,6 +8,7 @@ import com.ben.model.ValoAgent;
 
 /**
  * declarations of methods 
+ * declare methods here then implement in ValoAgentServiceImpl
  */
 @WebService
 public interface ValoAgentService {
