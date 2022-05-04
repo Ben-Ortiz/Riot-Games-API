@@ -13,8 +13,10 @@ import com.ben.model.ValoAgent;
 @WebService
 public interface ValoAgentService {
 	
-	public List<ValoAgent> findAll();
-	public ValoAgent save (ValoAgent valoAgent);
+	public List<ValoAgent> findAllValoAgents();
+	public ValoAgent saveValoAgent (ValoAgent valoAgent);
+	public void deleteValoAgentById(Long Id);
+	public ValoAgent updateValoAgent(ValoAgent valoAgent);
 	public String test();
 
 }

@@ -19,7 +19,7 @@ public class LOLChampionServiceImpl implements LOLChampionService {
 	 * calls the lcRepository to find all champions from the database
 	 */
 	@Override
-	public List<LOLChampion> getLOLChampions() {
+	public List<LOLChampion> findAllLOLChampions() {
 		return lcRepository.findAll();
 	}
 

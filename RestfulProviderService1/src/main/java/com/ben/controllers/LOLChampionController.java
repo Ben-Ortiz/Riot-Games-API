@@ -37,7 +37,7 @@ public class LOLChampionController {
 	// http://localhost:8080/leagueOfLegends/champions
 	@GetMapping("/champions")
 	public List<LOLChampion> getChampion() {
-		return lcService.getLOLChampions();
+		return lcService.findAllLOLChampions();
 	}
 	
 	// http://localhost:8080/leagueOfLegends/champions/1

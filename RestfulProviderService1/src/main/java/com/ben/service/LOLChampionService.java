@@ -9,9 +9,9 @@ import com.ben.model.LOLChampion;
 @Service
 public interface LOLChampionService {
 
-	List<LOLChampion> getLOLChampions();
-	LOLChampion saveLOLChampion(LOLChampion lolChampion);
-	LOLChampion getSingleChampion(Long id);
-	void deleteChampion(Long id);
-	LOLChampion updateLOLChampion(LOLChampion lolChampion);
+	public List<LOLChampion> findAllLOLChampions();
+	public LOLChampion saveLOLChampion(LOLChampion lolChampion);
+	public LOLChampion getSingleChampion(Long id);
+	public void deleteChampion(Long id);
+	public LOLChampion updateLOLChampion(LOLChampion lolChampion);
 }

@@ -23,18 +23,30 @@ public class ValoAgentServiceImpl implements ValoAgentService{
 	private ValoAgentRepository valoAgentRepository;
 
 	@WebMethod
-	public List<ValoAgent> findAll() {
+	public List<ValoAgent> findAllValoAgents() {
 		return this.valoAgentRepository.findAll();
 	}
 
 	@WebMethod
-	public ValoAgent save(ValoAgent valoAgent) {
+	public ValoAgent saveValoAgent(ValoAgent valoAgent) {
 		return valoAgentRepository.save(valoAgent);
 	}
 
+	//Sanity check method my soap service works
 	@WebMethod
 	public String test() {
 		return "a string";
+	}
+
+	@WebMethod
+	public void deleteValoAgentById(Long Id) {
+		valoAgentRepository.deleteById(Id);
+		
+	}
+
+	@WebMethod
+	public ValoAgent updateValoAgent(ValoAgent valoAgent) {
+		return valoAgentRepository.save(valoAgent);
 	}
 	
 	
