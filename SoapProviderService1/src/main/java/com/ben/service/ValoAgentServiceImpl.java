@@ -21,6 +21,12 @@ public class ValoAgentServiceImpl implements ValoAgentService {
 	@Autowired
 	private ValoAgentRepository valoAgentRepository;
 
+	// Sanity check method my soap service works
+	@WebMethod
+	public String test() {
+		return "watch this!";
+	}
+
 	@WebMethod
 	public List<ValoAgent> findAllValoAgents() {
 		return this.valoAgentRepository.findAll();
@@ -29,12 +35,6 @@ public class ValoAgentServiceImpl implements ValoAgentService {
 	@WebMethod
 	public ValoAgent saveValoAgent(ValoAgent valoAgent) {
 		return valoAgentRepository.save(valoAgent);
-	}
-
-	// Sanity check method my soap service works
-	@WebMethod
-	public String test() {
-		return "a string";
 	}
 
 	@WebMethod
