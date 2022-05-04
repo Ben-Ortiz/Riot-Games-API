@@ -33,7 +33,7 @@ public class ValoAgentServiceImpl implements ValoAgentService{
 
 	@Override
 	public String test() {
-		return "a string ";
+		return "a string";
 	}
 	
 	
