@@ -9,11 +9,12 @@ public class LOLChampion {
 	
 	private long id;
 	private String champName;
-
-	public LOLChampion(long id, String name) {
+	
+	
+	public LOLChampion(long id, String champName) {
 		super();
 		this.id = id;
-		this.champName = name;
+		this.champName = champName;
 	}
 	public long getId() {
 		return id;
@@ -21,15 +22,15 @@ public class LOLChampion {
 	public void setId(long id) {
 		this.id = id;
 	}
-	public String getName() {
+	public String getChampName() {
 		return champName;
 	}
-	public void setName(String name) {
-		this.champName = name;
+	public void setChampName(String champName) {
+		this.champName = champName;
 	}
 	@Override
 	public int hashCode() {
-		return Objects.hash(id, champName);
+		return Objects.hash(champName, id);
 	}
 	@Override
 	public boolean equals(Object obj) {
@@ -40,12 +41,14 @@ public class LOLChampion {
 		if (getClass() != obj.getClass())
 			return false;
 		LOLChampion other = (LOLChampion) obj;
-		return id == other.id && Objects.equals(champName, other.champName);
+		return Objects.equals(champName, other.champName) && id == other.id;
 	}
 	@Override
 	public String toString() {
-		return "LOLChampion [id=" + id + ", name=" + champName + "]";
+		return "LOLChampion [id=" + id + ", champName=" + champName + "]";
 	}
+
+	
 	
 	
 
