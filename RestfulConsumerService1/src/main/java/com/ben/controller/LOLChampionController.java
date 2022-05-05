@@ -27,7 +27,7 @@ public class LOLChampionController {
 	 * http://localhost:6060/lolchampion?id=2
 	 */
 	@GetMapping("/lolchampion")
-	public LOLChampion getLOLChampion(@PathParam(value = "id") long id) {
+	public LOLChampion getLOLChampionById(@PathParam(value = "id") long id) {
 		ResponseEntity<LOLChampion> lolChampion = restTemplate.getForEntity("http://localhost:8080/leagueOfLegends/champions/" + id, LOLChampion.class);
 		return lolChampion.getBody();
 	}
@@ -40,12 +40,12 @@ public class LOLChampionController {
 	}
 	
 	@PutMapping("lolchampion/update/{id}")
-	public void updateLOLChampion(@PathVariable Long id, @RequestBody LOLChampion lolChampion) {
+	public void updateLOLChampionById(@PathVariable Long id, @RequestBody LOLChampion lolChampion) {
 		restTemplate.put("http://localhost:8080/leagueOfLegends/champions/" + id, lolChampion);
 	}
 	
 	@DeleteMapping("/lolchampion/delete")
-	public void deleteLOLChampion(@RequestParam Long id) {
+	public void deleteLOLChampionById(@RequestParam Long id) {
 		restTemplate.delete("http://localhost:8080/leagueOfLegends/champions?id=" + id);
 	}
 
