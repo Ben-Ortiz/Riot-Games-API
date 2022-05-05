@@ -26,8 +26,8 @@ public class LOLChampionController {
 	/* Use this in Postman 
 	 * http://localhost:6060/lolchampion?id=2
 	 */
-	@GetMapping("/lolchampion")
-	public LOLChampion getLOLChampionById(@PathParam(value = "id") long id) {
+	@GetMapping("/lolchampion/get/{id}")
+	public LOLChampion getLOLChampionById(@PathVariable Long id) {
 		ResponseEntity<LOLChampion> lolChampion = restTemplate.getForEntity("http://localhost:8080/leagueOfLegends/champions/" + id, LOLChampion.class);
 		return lolChampion.getBody();
 	}
