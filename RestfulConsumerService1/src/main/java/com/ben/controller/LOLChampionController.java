@@ -32,7 +32,6 @@ public class LOLChampionController {
 		return lolChampion.getBody();
 	}
 	
-	
 	@PostMapping("/lolchampion/new")
 	public LOLChampion saveLOLChampion(@RequestBody LOLChampion lolChampion) {
 		ResponseEntity<LOLChampion> response = restTemplate.postForEntity("http://localhost:8080/leagueOfLegends/postChampion", lolChampion, LOLChampion.class);
