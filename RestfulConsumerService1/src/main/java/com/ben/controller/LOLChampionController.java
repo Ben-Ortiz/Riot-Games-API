@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
@@ -24,6 +26,13 @@ public class LOLChampionController {
 	public LOLChampion getLOLChampion(@PathParam(value = "id") long id) {
 		ResponseEntity<LOLChampion> lolChampion = restTemplate.getForEntity("http://localhost:8080/leagueOfLegends/champions/" + id, LOLChampion.class);
 		return lolChampion.getBody();
+	}
+	
+	
+	@PostMapping("/lolchampion/new")
+	public LOLChampion saveLOLChampion(@RequestBody LOLChampion lolChampion) {
+		ResponseEntity<LOLChampion> response = restTemplate.postForEntity("http://localhost:8080/leagueOfLegends/postChampion", lolChampion, LOLChampion.class);
+		return response.getBody();
 	}
 
 }

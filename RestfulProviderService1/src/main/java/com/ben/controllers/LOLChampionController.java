@@ -3,6 +3,7 @@ package com.ben.controllers;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -49,6 +50,7 @@ public class LOLChampionController {
 	
 	// http://localhost:8080/leagueOfLegends/postChampion
 	// @RequestBody is for getting lists
+	@CrossOrigin(origins = "http://localhost:6060")
 	@PostMapping("/postChampion")
 	public LOLChampion saveLOLChampion(@RequestBody LOLChampion lolChampion) {
 		return lcService.saveLOLChampion(lolChampion);
