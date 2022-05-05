@@ -8,6 +8,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 public class LOLChampion {
 	
 	private long id;
+	//this String field has to be the same name as the rest provider LOLChampion model class field for this to work
 	private String champName;
 	
 	
