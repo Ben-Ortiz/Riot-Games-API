@@ -50,7 +50,7 @@ public class LOLChampionController {
 	
 	// http://localhost:8080/leagueOfLegends/postChampion
 	// @RequestBody is for getting lists
-	@CrossOrigin(origins = "http://localhost:6060")
+//	@CrossOrigin(origins = "http://localhost:6060")
 	@PostMapping("/postChampion")
 	public LOLChampion saveLOLChampion(@RequestBody LOLChampion lolChampion) {
 		return lcService.saveLOLChampion(lolChampion);
