@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 
 import com.ben.model.ValoAgent;
 
-@WebService(serviceName = "order-service", targetNamespace = "http://service.ben.com/")
+@WebService(serviceName = "valoagent-service", targetNamespace = "http://service.ben.com/")
 @Component
 public interface ValoAgentService {
 	
