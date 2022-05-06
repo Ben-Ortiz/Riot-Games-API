@@ -30,6 +30,11 @@ public class ValoAgentController {
 //		return response.getBody();
 //	}
 	
+	/*
+	 * Postman doesn't like this url 404
+	 * GET http://localhost:6060/message/soap-message
+	 * 
+	 */
 	@GetMapping("/soap-message")
 	public Object getSoapMessage() {
 		return this.valoAgentService.findAll();
