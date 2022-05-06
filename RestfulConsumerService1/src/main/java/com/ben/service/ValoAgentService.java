@@ -16,6 +16,12 @@ public interface ValoAgentService {
 	@WebMethod
 	public List<ValoAgent> findAllValoAgents();
 	@WebMethod
+	public ValoAgent saveValoAgent (ValoAgent valoAgent);
+	@WebMethod
+	public void deleteValoAgentById(Long Id);
+	@WebMethod
+	public ValoAgent updateValoAgent(ValoAgent valoAgent);
+	@WebMethod
 	public String test();
 
 }

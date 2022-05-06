@@ -28,14 +28,14 @@ public class RestfulConsumerService1Application {
 		return builder.build();
 	}
 	
-	@Bean
-	public RestTemplate restTemplateXML() {
-		final String BASE_URL = "http://localhost:8081/soap-service";
-		DefaultUriBuilderFactory uriBuilderFactory = new DefaultUriBuilderFactory(BASE_URL);
-		RestTemplate restTemplate = new RestTemplate();
-		restTemplate.setUriTemplateHandler(uriBuilderFactory);
-		return restTemplate;
-	}
+//	@Bean
+//	public RestTemplate restTemplateXML() {
+//		final String BASE_URL = "http://localhost:8081/soap-service";
+//		DefaultUriBuilderFactory uriBuilderFactory = new DefaultUriBuilderFactory(BASE_URL);
+//		RestTemplate restTemplate = new RestTemplate();
+//		restTemplate.setUriTemplateHandler(uriBuilderFactory);
+//		return restTemplate;
+//	}
 	
 
 }
