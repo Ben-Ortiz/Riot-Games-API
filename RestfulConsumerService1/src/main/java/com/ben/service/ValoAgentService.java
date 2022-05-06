@@ -11,10 +11,15 @@ import org.springframework.stereotype.Service;
 
 import com.ben.model.ValoAgent;
 
-@WebService(serviceName = "valoagent-service", targetNamespace = "http://service.revature.com/")
+@WebService(serviceName = "valoagent-service", targetNamespace = "http://service.ben.com/")
 @Component
 public interface ValoAgentService {
 	
+	/*
+	 * Postman doesn't like this url 404
+	 * http://localhost:6060/message/soap-message
+	 * 
+	 */
 	@WebMethod
 	public List<ValoAgent> findAll();
 
