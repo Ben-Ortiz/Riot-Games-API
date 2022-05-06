@@ -34,7 +34,7 @@ public class LOLChampionController {
 	}
 	
 	/* Use this in Postman 
-	 * http://localhost:6060/lolchampion?id=2
+	 * http://localhost:6060/lolchampion/2
 	 */
 	@GetMapping("/lolchampion/get/{id}")
 	public LOLChampion getLOLChampionById(@PathVariable Long id) {

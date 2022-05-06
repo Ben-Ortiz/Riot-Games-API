@@ -15,7 +15,7 @@ import org.springframework.web.util.DefaultUriBuilderFactory;
 import com.ben.model.ValoAgent;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"com.ben.service"})
+@ComponentScan(basePackages = {"com.ben.service", "com.ben.controller"}) //include com.ben.controller or rest consumer doesnt take rest provider
 public class RestfulConsumerService1Application {
 
 	public static void main(String[] args) {

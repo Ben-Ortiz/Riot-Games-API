@@ -12,8 +12,8 @@ import org.springframework.web.client.RestTemplate;
 import com.ben.model.ValoAgent;
 import com.ben.service.ValoAgentService;
 
-@RestController("messageController")
-@RequestMapping("/message")
+//@RestController("messageController")
+//@RequestMapping("/message")
 public class ValoAgentController {
 //	
 //	@Autowired
@@ -35,10 +35,10 @@ public class ValoAgentController {
 	 * GET http://localhost:6060/message/soap-message
 	 * 
 	 */
-	@GetMapping("/soap-message")
-	public Object getSoapMessage() {
-		return this.valoAgentService.findAll();
-	}
+//	@GetMapping("/soap-message")
+//	public Object getSoapMessage() {
+//		return this.valoAgentService.findAll();
+//	}
 	
 	@GetMapping("/test")
 	public String testSoapMessage() {
