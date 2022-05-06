@@ -9,6 +9,9 @@ import org.springframework.stereotype.Component;
 
 import com.ben.model.ValoAgent;
 
+/*
+ * need this class to connect to soap service
+ */
 @WebService(serviceName = "valoagent-service", targetNamespace = "http://service.ben.com/")
 @Component
 public interface ValoAgentService {

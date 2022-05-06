@@ -12,6 +12,9 @@ import com.ben.service.ValoAgentService;
 @Configuration
 public class ClientConfiguration {
 	
+	/*
+	 * this bean is how soap service talks to this rest consumer service
+	 */
 	@Bean
 	public JaxWsPortProxyFactoryBean serviceProxy() {
 		JaxWsPortProxyFactoryBean proxyFactory = new JaxWsPortProxyFactoryBean();

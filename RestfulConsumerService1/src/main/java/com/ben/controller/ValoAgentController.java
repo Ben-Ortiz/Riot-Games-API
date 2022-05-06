@@ -15,6 +15,9 @@ import org.springframework.web.bind.annotation.RestController;
 import com.ben.model.ValoAgent;
 import com.ben.service.ValoAgentService;
 
+/*
+ * this class is used by soap service
+ */
 @RestController
 @RequestMapping("/valoagent")
 public class ValoAgentController {

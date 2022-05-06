@@ -4,6 +4,9 @@ import java.util.Objects;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+/*
+ * need this class to get soap service to work
+ */
 public class ValoAgent {
 
 	private long id;
