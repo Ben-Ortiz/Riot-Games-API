@@ -15,11 +15,6 @@ import com.ben.model.ValoAgent;
 @Component
 public interface ValoAgentService {
 	
-	/*
-	 * Postman doesn't like this url 404
-	 * http://localhost:6060/message/soap-message
-	 * 
-	 */
 	@WebMethod
 	public List<ValoAgent> findAll();
 

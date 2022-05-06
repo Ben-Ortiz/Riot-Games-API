@@ -12,7 +12,7 @@ import org.springframework.web.client.RestTemplate;
 import com.ben.model.ValoAgent;
 import com.ben.service.ValoAgentService;
 
-@RestController
+@RestController("messageController")
 @RequestMapping("/message")
 public class ValoAgentController {
 //	
@@ -38,6 +38,11 @@ public class ValoAgentController {
 	@GetMapping("/soap-message")
 	public Object getSoapMessage() {
 		return this.valoAgentService.findAll();
+	}
+	
+	@GetMapping("/test")
+	public String testSoapMessage() {
+		return "soap test from rest consumer";
 	}
 
 }
