@@ -1,5 +1,7 @@
 package com.ben.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -12,7 +14,7 @@ import org.springframework.web.client.RestTemplate;
 import com.ben.model.ValoAgent;
 import com.ben.service.ValoAgentService;
 
-//@RestController("messageController")
+@RestController
 //@RequestMapping("/message")
 public class ValoAgentController {
 //	
@@ -21,8 +23,14 @@ public class ValoAgentController {
 //	@Autowired
 //	private RestTemplate restTemplateXML;
 	
+	//autowiring this gives error
+	//Field valoAgentService in com.ben.controller.ValoAgentController required a bean of type 'com.ben.service.ValoAgentService' that could not be found.
+	//commenting this out, application starts
+//	@Autowired
+//	private ValoAgentService valoAgentService;
+	
 	@Autowired
-	private ValoAgentService valoAgentService;
+	private RestTemplate restTemplate;
 	
 //	@GetMapping(value = "/valoagent/{id}", produces = MediaType.APPLICATION_XML_VALUE)
 //	public ValoAgent getValoAgent(@PathVariable Long id) {
@@ -36,13 +44,19 @@ public class ValoAgentController {
 	 * 
 	 */
 //	@GetMapping("/soap-message")
-//	public Object getSoapMessage() {
+//	public List<ValoAgent> getSoapMessage() {
 //		return this.valoAgentService.findAll();
 //	}
 	
-	@GetMapping("/test")
-	public String testSoapMessage() {
-		return "soap test from rest consumer";
+//	@GetMapping("/test")
+//	public String testSoapMessage() {
+//		return "soap test from rest consumer";
+//	}
+	
+	@GetMapping("/testsoap")
+	public String test() {
+		return "testsoap";
+		
 	}
 
 }

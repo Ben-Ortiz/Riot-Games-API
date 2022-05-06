@@ -13,6 +13,7 @@ import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.DefaultUriBuilderFactory;
 
 import com.ben.model.ValoAgent;
+import com.ben.service.ValoAgentService;
 
 @SpringBootApplication
 /*	

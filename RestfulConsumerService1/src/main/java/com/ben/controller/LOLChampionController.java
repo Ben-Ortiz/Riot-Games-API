@@ -58,5 +58,11 @@ public class LOLChampionController {
 	public void deleteLOLChampionById(@RequestParam Long id) {
 		restTemplate.delete("http://localhost:8080/leagueOfLegends/champions?id=" + id);
 	}
+	
+	@GetMapping("/test")
+	public String test() {
+		return "test";
+		
+	}
 
 }

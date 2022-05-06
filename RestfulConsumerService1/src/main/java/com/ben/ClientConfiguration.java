@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.remoting.jaxws.JaxWsPortProxyFactoryBean;
 
 import com.ben.model.ValoAgent;
+import com.ben.service.ValoAgentService;
 
 @Configuration
 public class ClientConfiguration {
@@ -29,6 +30,8 @@ public class ClientConfiguration {
 		
 		return proxyFactory;
 	}
+	
+	
 	
 	
 
