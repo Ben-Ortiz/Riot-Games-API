@@ -22,7 +22,7 @@ public class ClientConfiguration {
 			
 			proxyFactory.setServiceName("ValoAgentServiceImpl");
 			proxyFactory.setPortName("ValoAgentServiceImplPort");
-			proxyFactory.setNamespaceUri("http://service.revature.com/");
+			proxyFactory.setNamespaceUri("http://service.ben.com/");
 		}catch(MalformedURLException e) {
 			e.printStackTrace();
 		}
