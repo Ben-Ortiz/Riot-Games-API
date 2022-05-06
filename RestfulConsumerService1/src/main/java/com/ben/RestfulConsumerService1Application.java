@@ -13,6 +13,8 @@ import org.springframework.web.util.DefaultUriBuilderFactory;
 /*	
  *  this component scan has to include com.ben.services or java.lang.IllegalArgumentException: 'serviceInterface' must be an interface error happens
  *  include com.ben.controller or rest consumer doesnt take rest provider
+ *  
+ *  had to remove this once I put messagecontroller.java in com.ben.soap.service
  */
 //@ComponentScan(basePackages = {"com.ben.service", "com.ben.controller"}) 
 public class RestfulConsumerService1Application {

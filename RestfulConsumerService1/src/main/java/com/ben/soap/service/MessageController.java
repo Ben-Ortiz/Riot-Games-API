@@ -14,7 +14,7 @@ import com.ben.service.ValoAgentService;
  * error of not finding the valoAgentService bean happening.
  * reason this wasnt working was it was in package com.ben.service. had to be com.ben.soap.service
  */
-@RestController("messageController")
+@RestController
 @RequestMapping("/message")
 public class MessageController {
 	
