@@ -1,5 +1,7 @@
 package com.ben.controller;
 
+import java.util.List;
+
 import javax.websocket.server.PathParam;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,10 +28,20 @@ public class LOLChampionController {
 	/* Use this in Postman 
 	 * http://localhost:6060/lolchampion?id=2
 	 */
+	
+	@GetMapping("/lolchampion/getall")
+	public List<LOLChampion> getAllLOLChampion() {
+		ResponseEntity<List> lolChampion = restTemplate.getForEntity("http://localhost:8080/leagueOfLegends/champions/", List.class);
+		List<LOLChampion> lolChampionList = lolChampion.getBody();
+		return lolChampionList;
+		
+	}
+	
 	@GetMapping("/lolchampion/get/{id}")
 	public LOLChampion getLOLChampionById(@PathVariable Long id) {
 		ResponseEntity<LOLChampion> lolChampion = restTemplate.getForEntity("http://localhost:8080/leagueOfLegends/champions/" + id, LOLChampion.class);
 		return lolChampion.getBody();
+		
 	}
 	
 	@PostMapping("/lolchampion/new")
