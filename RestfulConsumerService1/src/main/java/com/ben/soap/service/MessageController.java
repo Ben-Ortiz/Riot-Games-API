@@ -26,8 +26,9 @@ public class MessageController {
 	@Autowired
 	private ValoAgentService valoAgentService;
 	
+	
 	/*
-	 * 404 error cant call this for some reason
+	 * http://localhost:6060/valoagent/getall
 	 */
 	@GetMapping("/getall")
 	public List<ValoAgent> getSoapMessage() {
@@ -49,8 +50,9 @@ public class MessageController {
 		valoAgentService.deleteValoAgentById(id);
 	}
 	
-
-	
+	/*
+	 * test method 
+	 */
 	@GetMapping("/testsoap")
 	public String test() {
 		return this.valoAgentService.test();

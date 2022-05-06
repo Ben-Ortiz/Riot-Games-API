@@ -26,15 +26,6 @@ public class LOLChampionController {
 	@Autowired
 	private LOLChampionService lcService;
 
-	// sanity check for my get request to work
-	// http://localhost:8080/leagueOfLegends/championsTest
-	@GetMapping("/championsTest")
-	public String getChampionTest() {
-		LOLChampion lolChampion = new LOLChampion(1, "Viktor");
-		return lolChampion.getChampName();
-
-	}
-
 	// http://localhost:8080/leagueOfLegends/champions
 	@GetMapping("/champions")
 	public List<LOLChampion> getChampion() {
@@ -50,7 +41,6 @@ public class LOLChampionController {
 	
 	// http://localhost:8080/leagueOfLegends/postChampion
 	// @RequestBody is for getting lists
-//	@CrossOrigin(origins = "http://localhost:6060")
 	@PostMapping("/postChampion")
 	public LOLChampion saveLOLChampion(@RequestBody LOLChampion lolChampion) {
 		return lcService.saveLOLChampion(lolChampion);
@@ -71,6 +61,12 @@ public class LOLChampionController {
 		lcService.deleteChampion(id);
 	}
 	
-	
+	// sanity check for my get request to work
+	// http://localhost:8080/leagueOfLegends/championsTest
+	@GetMapping("/championsTest")
+	public String getChampionTest() {
+		LOLChampion lolChampion = new LOLChampion(1, "Viktor");
+		return lolChampion.getChampName();
+	}
 
 }
