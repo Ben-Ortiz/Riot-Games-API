@@ -21,7 +21,7 @@ public class ClientConfiguration {
 			proxyFactory.setServiceInterface(ValoAgentService.class);
 			
 			proxyFactory.setServiceName("ValoAgentServiceImplService");
-			proxyFactory.setPortName("valoagentPort");
+			proxyFactory.setPortName("ValoAgentServiceImplPort");
 			proxyFactory.setNamespaceUri("http://service.ben.com/");
 		}catch(MalformedURLException e) {
 			e.printStackTrace();
