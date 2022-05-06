@@ -26,7 +26,6 @@ public class MessageController {
 	@Autowired
 	private ValoAgentService valoAgentService;
 	
-	
 	/*
 	 * http://localhost:6060/valoagent/getall
 	 */
