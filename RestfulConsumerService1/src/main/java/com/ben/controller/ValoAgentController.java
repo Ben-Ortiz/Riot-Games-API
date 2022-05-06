@@ -14,7 +14,7 @@ import org.springframework.web.client.RestTemplate;
 import com.ben.model.ValoAgent;
 import com.ben.service.ValoAgentService;
 
-@RestController
+//@RestController("messageController")
 //@RequestMapping("/message")
 public class ValoAgentController {
 //	
@@ -26,11 +26,17 @@ public class ValoAgentController {
 	//autowiring this gives error
 	//Field valoAgentService in com.ben.controller.ValoAgentController required a bean of type 'com.ben.service.ValoAgentService' that could not be found.
 	//commenting this out, application starts
+//	
 //	@Autowired
 //	private ValoAgentService valoAgentService;
 	
-	@Autowired
-	private RestTemplate restTemplate;
+//	@Autowired
+//	public void ValoAgentService(ValoAgentService valoAgentService) {
+//		this.valoAgentService = valoAgentService;
+//	}
+//	
+//	@Autowired
+//	private RestTemplate restTemplate;
 	
 //	@GetMapping(value = "/valoagent/{id}", produces = MediaType.APPLICATION_XML_VALUE)
 //	public ValoAgent getValoAgent(@PathVariable Long id) {
@@ -53,10 +59,10 @@ public class ValoAgentController {
 //		return "soap test from rest consumer";
 //	}
 	
-	@GetMapping("/testsoap")
-	public String test() {
-		return "testsoap";
-		
-	}
+//	@GetMapping("/testsoap")
+//	public String test() {
+//		return "testsoap";
+//		
+//	}
 
 }

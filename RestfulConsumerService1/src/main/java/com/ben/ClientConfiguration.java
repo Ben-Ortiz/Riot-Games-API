@@ -7,7 +7,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.remoting.jaxws.JaxWsPortProxyFactoryBean;
 
-import com.ben.model.ValoAgent;
 import com.ben.service.ValoAgentService;
 
 @Configuration
@@ -19,10 +18,10 @@ public class ClientConfiguration {
 		
 		try {
 			proxyFactory.setWsdlDocumentUrl(new URL("http://localhost:8081/soap-service/valoagent-service?wsdl"));
-			proxyFactory.setServiceInterface(ValoAgent.class);
+			proxyFactory.setServiceInterface(ValoAgentService.class);
 			
-			proxyFactory.setServiceName("ValoAgentServiceImpl");
-			proxyFactory.setPortName("ValoAgentServiceImplPort");
+			proxyFactory.setServiceName("ValoAgentServiceImplService");
+			proxyFactory.setPortName("valoagentPort");
 			proxyFactory.setNamespaceUri("http://service.ben.com/");
 		}catch(MalformedURLException e) {
 			e.printStackTrace();
