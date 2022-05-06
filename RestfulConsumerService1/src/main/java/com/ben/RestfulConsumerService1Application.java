@@ -15,7 +15,11 @@ import org.springframework.web.util.DefaultUriBuilderFactory;
 import com.ben.model.ValoAgent;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"com.ben.service", "com.ben.controller"}) //include com.ben.controller or rest consumer doesnt take rest provider
+/*	
+ *  this component scan has to include com.ben.services or java.lang.IllegalArgumentException: 'serviceInterface' must be an interface error happens
+ *  include com.ben.controller or rest consumer doesnt take rest provider
+ */
+@ComponentScan(basePackages = {"com.ben.service", "com.ben.controller"}) 
 public class RestfulConsumerService1Application {
 
 	public static void main(String[] args) {
@@ -27,14 +31,14 @@ public class RestfulConsumerService1Application {
 		return builder.build();
 	}
 	
-	@Bean
-	public RestTemplate restTemplateXML() {
-		final String BASE_URL = "http://localhost:8081/soap-service";
-		DefaultUriBuilderFactory uriBuilderFactory = new DefaultUriBuilderFactory(BASE_URL);
-		RestTemplate restTemplate = new RestTemplate();
-		restTemplate.setUriTemplateHandler(uriBuilderFactory);
-		return restTemplate;
-	}
+//	@Bean
+//	public RestTemplate restTemplateXML() {
+//		final String BASE_URL = "http://localhost:8081/soap-service";
+//		DefaultUriBuilderFactory uriBuilderFactory = new DefaultUriBuilderFactory(BASE_URL);
+//		RestTemplate restTemplate = new RestTemplate();
+//		restTemplate.setUriTemplateHandler(uriBuilderFactory);
+//		return restTemplate;
+//	}
 	
 
 }

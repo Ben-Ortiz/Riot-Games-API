@@ -29,6 +29,8 @@ public class ClientConfiguration {
 		
 		return proxyFactory;
 	}
+	
+	
 
 
 }
