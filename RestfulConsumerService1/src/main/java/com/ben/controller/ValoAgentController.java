@@ -1,4 +1,4 @@
-package com.ben.soap.service;
+package com.ben.controller;
 
 import java.util.List;
 
@@ -15,13 +15,9 @@ import org.springframework.web.bind.annotation.RestController;
 import com.ben.model.ValoAgent;
 import com.ben.service.ValoAgentService;
 
-/*
- * error of not finding the valoAgentService bean happening.
- * reason this wasnt working was it was in package com.ben.service. had to be com.ben.soap.service
- */
 @RestController
 @RequestMapping("/valoagent")
-public class MessageController {
+public class ValoAgentController {
 	
 	@Autowired
 	private ValoAgentService valoAgentService;
