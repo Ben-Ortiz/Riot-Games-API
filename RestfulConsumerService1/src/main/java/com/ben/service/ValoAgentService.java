@@ -11,8 +11,7 @@ import org.springframework.stereotype.Service;
 
 import com.ben.model.ValoAgent;
 
-@WebService(serviceName = "order-service", targetNamespace = "http://service.revature.com/")
-@Service
+@WebService(serviceName = "valoagent-service", targetNamespace = "http://service.revature.com/")
 @Component
 public interface ValoAgentService {
 	

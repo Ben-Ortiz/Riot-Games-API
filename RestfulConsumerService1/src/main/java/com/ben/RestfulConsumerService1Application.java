@@ -36,25 +36,5 @@ public class RestfulConsumerService1Application {
 		return restTemplate;
 	}
 	
-	@Bean
-	public JaxWsPortProxyFactoryBean serviceProxy() {
-		JaxWsPortProxyFactoryBean proxyFactory = new JaxWsPortProxyFactoryBean();
-		
-		try {
-			proxyFactory.setWsdlDocumentUrl(new URL("http://localhost:8081/soap-service/valoagent-service?wsdl"));
-			proxyFactory.setServiceInterface(ValoAgent.class);
-			
-			proxyFactory.setServiceName("ValoAgentServiceImpl");
-			proxyFactory.setPortName("orderPort");
-			proxyFactory.setNamespaceUri("http://service.revature.com/");
-		}catch(MalformedURLException e) {
-			e.printStackTrace();
-		}
-		
-		return proxyFactory;
-	}
-	
-	
-	
 
 }
