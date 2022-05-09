@@ -4338,3 +4338,18 @@ Unconditional classes:
 08:51:35.304 [restartedMain] DEBUG o.s.boot.devtools.restart.Restarter - Immediately restarting application
 08:51:35.304 [restartedMain] DEBUG o.s.boot.devtools.restart.Restarter - Starting application com.ben.RestfulConsumerService1Application with URLs [file:/C:/Users/benor/Documents/workspace-spring-tool-suite-4-4.14.0.RELEASE/Benedict_Ortiz_p1/RestfulConsumerService1/target/classes/]
 08:51:35.304 [restartedMain] DEBUG o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+08:55:44.384 [http-nio-6060-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+08:55:44.385 [http-nio-6060-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+08:55:44.385 [http-nio-6060-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+08:55:44.385 [http-nio-6060-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+08:55:44.385 [http-nio-6060-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+08:55:44.385 [http-nio-6060-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2773da8c
+08:55:44.386 [http-nio-6060-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@77a305de
+08:55:44.386 [http-nio-6060-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+08:55:44.386 [http-nio-6060-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+08:55:44.393 [http-nio-6060-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/valoagent/getall", parameters={}
+08:55:44.398 [http-nio-6060-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ben.controller.ValoAgentController#getSoapMessage()
+08:55:44.407 [http-nio-6060-exec-1] INFO  com.ben.util.LoggingAspect - controller getSoapMessage
+08:55:44.735 [http-nio-6060-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+08:55:44.736 [http-nio-6060-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[ValoAgent [id=2, valoName=Jett], ValoAgent [id=3, valoName=Viper]]]
+08:55:44.763 [http-nio-6060-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK

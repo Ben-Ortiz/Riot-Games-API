@@ -24,7 +24,7 @@ public class LoggingAspect {
 	
 	@Before("logWithinServicePackage()")
 	public void logBefore(JoinPoint jp) {
-		logger.info("work " + jp.getSignature().getName());
+		logger.info("SoapProviderService1 before service " + jp.getSignature().getName());
 	}
 
 }
