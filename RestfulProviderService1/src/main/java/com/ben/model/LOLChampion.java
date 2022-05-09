@@ -9,7 +9,8 @@ import javax.persistence.Id;
 
 /**
  * This class is the model class of LOLCHampion, and with the annotations @Entity which makes the table,
- * and the @Id makes the primary key the id.
+ * and the @Id makes the primary key the id to be automatically made in the database connected without creating the 
+ * database yourself.
  * @author benor
  *
  */

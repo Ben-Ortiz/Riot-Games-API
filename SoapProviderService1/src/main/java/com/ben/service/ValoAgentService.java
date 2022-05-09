@@ -7,8 +7,7 @@ import javax.jws.WebService;
 import com.ben.model.ValoAgent;
 
 /**
- * declarations of methods 
- * declare methods here then implement in ValoAgentServiceImpl
+ * This interface is used to declare the methods needed to be implemented in the ValoAgentServiceImpl.java file
  */
 @WebService
 public interface ValoAgentService {

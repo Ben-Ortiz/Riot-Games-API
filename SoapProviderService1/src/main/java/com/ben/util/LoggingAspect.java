@@ -8,6 +8,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
+/**
+ * this class enables logging to happen without adding log statements all throughout the program but in one central file.
+ * @author benor
+ *
+ */
 @Aspect
 @Component
 public class LoggingAspect {

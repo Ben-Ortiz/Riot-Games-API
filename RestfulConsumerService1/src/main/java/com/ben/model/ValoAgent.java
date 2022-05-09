@@ -4,8 +4,11 @@ import java.util.Objects;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-/*
- * need this class to get soap service to work
+/**
+ * This class allows the ValoAgent class to be represented in this Rest Consumer API. 
+ * The field names have to be the same as the Soap Provider Service in order for this to work.
+ * @author benor
+ *
  */
 public class ValoAgent {
 

@@ -4,6 +4,12 @@ import java.util.Objects;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+/**
+ * this class allows the LOLChampion to be represented in this Rest Consumer API
+ * Also, all the field names have to be the same as the field names in the Rest Provider API where the model LOLChampion also exists.
+ * @author benor
+ *
+ */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class LOLChampion {
 	

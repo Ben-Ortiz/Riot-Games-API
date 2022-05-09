@@ -9,7 +9,18 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import com.ben.service.ValoAgentServiceImpl;
-
+/**
+ * This file is needed to allow the soap service to be configured correctly.
+ * 
+ * Creates a link that can be used to check if service is working under:
+ * http://localhost:8081/soap-service/
+ * 
+ * Creates the wsdl under the url
+ * http://localhost:8081/soap-service/valoagent-service?wsdl
+ * 
+ * @author benor
+ *
+ */
 @Configuration
 public class JaxWsConfiguration {
 	

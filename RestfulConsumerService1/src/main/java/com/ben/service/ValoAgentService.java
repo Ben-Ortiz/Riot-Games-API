@@ -9,8 +9,11 @@ import org.springframework.stereotype.Component;
 
 import com.ben.model.ValoAgent;
 
-/*
- * need this class to connect to soap service
+/**
+ * This class is needed to allow the ClientConfiguration.java file to connect to the Soap Service API from this Rest Service API
+ * 
+ * @author benor
+ *
  */
 @WebService(serviceName = "valoagent-service", targetNamespace = "http://service.ben.com/")
 @Component

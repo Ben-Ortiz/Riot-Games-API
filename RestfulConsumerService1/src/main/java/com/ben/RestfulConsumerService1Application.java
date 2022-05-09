@@ -9,6 +9,13 @@ import org.springframework.remoting.jaxws.JaxWsPortProxyFactoryBean;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.DefaultUriBuilderFactory;
 
+
+/**
+ * This Rest Consumer API takes in the Rest API relating to League of Legends and Soap API relating to Valorant,
+ * and allows the requests to also be made using this Rest Consumer API.
+ * @author benor
+ *
+ */
 @SpringBootApplication
 /*	
  *  this component scan has to include com.ben.services or java.lang.IllegalArgumentException: 'serviceInterface' must be an interface error happens

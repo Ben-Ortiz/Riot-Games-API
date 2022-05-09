@@ -8,7 +8,14 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.remoting.jaxws.JaxWsPortProxyFactoryBean;
 
 import com.ben.service.ValoAgentService;
-
+/**
+ * this file allows the soap service to act like a rest api when implementing methods for requests to the soap api through
+ * this rest consumer api. 
+ * Allows GetMapping, PostMapping, DeleteMapping, PutMapping to the soap service because of this file.
+ * Without this file ValoAgentController.java, and the ValoAgentService.java would not be able to work.
+ * @author benor
+ *
+ */
 @Configuration
 public class ClientConfiguration {
 	

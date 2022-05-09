@@ -31,26 +31,44 @@ public class LOLChampionController {
 	@Autowired
 	private LOLChampionService lcService;
 
+	/**
+	 * This method allows postman to make a get request to get all champions from the database
+	 * @return all the champions from the database
+	 */
 	// http://localhost:8080/leagueOfLegends/champions
 	@GetMapping("/champions")
 	public List<LOLChampion> getChampion() {
 		return lcService.findAllLOLChampions();
 	}
 	
+	/**
+	 * This method allows postman to make a get request for 1 champion from the database
+	 * @param id
+	 * @return 1 champion from the database
+	 */
 	// http://localhost:8080/leagueOfLegends/champions/1
-	// for getting by single id use @PathVariable
 	@GetMapping("champions/{id}")
 	public LOLChampion getLOLChampion(@PathVariable Long id) {
 		return lcService.getSingleChampion(id);
 	}
 	
+	/**
+	 * This method allows postman to make a post request to add 1 champion to the database
+	 * @param lolChampion
+	 * @return 1 champion to the database
+	 */
 	// http://localhost:8080/leagueOfLegends/postChampion
-	// @RequestBody is for getting lists
 	@PostMapping("/postChampion")
 	public LOLChampion saveLOLChampion(@RequestBody LOLChampion lolChampion) {
 		return lcService.saveLOLChampion(lolChampion);
 	}
 	
+	/**
+	 * This method allows postman to make a put request to update 1 champion from the database
+	 * @param id
+	 * @param lolChampion
+	 * @return 1 champion to update to the database
+	 */
 	// http://localhost:8080/leagueOfLegends/champions/2
 	// In Postman change body to raw and JSON 
 	@PutMapping("/champions/{id}")
@@ -59,6 +77,10 @@ public class LOLChampionController {
 		return lcService.updateLOLChampion(lolChampion);
 	}
 	
+	/**
+	 * this method allows postman to make a delete request to delete 1 champion from the database
+	 * @param id
+	 */
 	// http://localhost:8080/leagueOfLegends/champions?id=2
 	// for delete use @RequestParam
 	@DeleteMapping("/champions")
@@ -66,6 +88,10 @@ public class LOLChampionController {
 		lcService.deleteChampion(id);
 	}
 	
+	/**
+	 * this method is a test method to check if postman is working for requests
+	 * @return
+	 */
 	// sanity check for my get request to work
 	// http://localhost:8080/leagueOfLegends/championsTest
 	@GetMapping("/championsTest")
