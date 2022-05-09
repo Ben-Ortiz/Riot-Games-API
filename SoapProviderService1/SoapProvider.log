@@ -346,3 +346,34 @@ org.apache.cxf.interceptor.Fault: No binding operation info while invoking unkno
 08:54:36.707 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
 08:54:36.713 [main] INFO  c.b.SoapProviderService1Application - Started SoapProviderService1Application in 3.115 seconds (JVM running for 4.036)
 08:55:44.583 [http-nio-8081-exec-4] INFO  com.ben.util.LoggingAspect - SoapProviderService1 before service findAllValoAgents
+09:12:14.951 [RMI TCP Connection(28)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+09:12:14.969 [RMI TCP Connection(28)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+09:12:14.970 [RMI TCP Connection(28)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+09:12:14.973 [RMI TCP Connection(28)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+09:12:16.704 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+09:12:16.707 [main] INFO  c.b.SoapProviderService1Application - Starting SoapProviderService1Application using Java 17.0.2 on Ben-Galaxy-Pro with PID 23280 (C:\Users\benor\Documents\workspace-spring-tool-suite-4-4.14.0.RELEASE\Benedict_Ortiz_p1\SoapProviderService1\target\classes started by benor in C:\Users\benor\Documents\workspace-spring-tool-suite-4-4.14.0.RELEASE\Benedict_Ortiz_p1\SoapProviderService1)
+09:12:16.707 [main] INFO  c.b.SoapProviderService1Application - No active profile set, falling back to 1 default profile: "default"
+09:12:17.101 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09:12:17.135 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 1 JPA repository interfaces.
+09:12:17.522 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+09:12:17.528 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+09:12:17.529 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+09:12:17.529 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.62]
+09:12:17.888 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+09:12:17.888 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1149 ms
+09:12:17.985 [main] INFO  o.s.b.web.servlet.RegistrationBean - Servlet CXFServlet was not registered (possibly already registered?)
+09:12:18.066 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+09:12:18.097 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.8.Final
+09:12:18.193 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+09:12:18.261 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+09:12:18.455 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+09:12:18.476 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+09:12:18.845 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+09:12:18.850 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+09:12:19.098 [main] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://service.ben.com/}ValoAgentServiceImplService from class com.ben.service.ValoAgentService
+09:12:19.408 [main] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be /valoagent-service
+09:12:19.445 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09:12:19.679 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+09:12:19.699 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+09:12:19.705 [main] INFO  c.b.SoapProviderService1Application - Started SoapProviderService1Application in 3.239 seconds (JVM running for 4.058)
+09:12:26.692 [http-nio-8081-exec-1] INFO  com.ben.util.LoggingAspect - SoapProviderService1 before service findAllValoAgents

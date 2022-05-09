@@ -44,13 +44,13 @@ public class JaxWsConfiguration {
 	
 	
 	@Bean
-	public ValoAgentServiceImpl valoAgentServiceImple() {
+	public ValoAgentServiceImpl valoAgentServiceImpl() {
 		return new ValoAgentServiceImpl();
 	}
 	
 	@Bean
 	public Endpoint endpoint() {
-		EndpointImpl endpoint = new EndpointImpl(springBus(), valoAgentServiceImple());
+		EndpointImpl endpoint = new EndpointImpl(springBus(), valoAgentServiceImpl());
 		/*
 		 * expose endpoint with address
 		 */
