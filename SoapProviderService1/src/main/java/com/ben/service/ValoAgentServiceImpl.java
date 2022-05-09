@@ -47,5 +47,6 @@ public class ValoAgentServiceImpl implements ValoAgentService {
 	public ValoAgent updateValoAgent(ValoAgent valoAgent) {
 		return valoAgentRepository.save(valoAgent);
 	}
+	
 
 }

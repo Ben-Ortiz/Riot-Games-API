@@ -6,6 +6,11 @@ import org.springframework.stereotype.Service;
 
 import com.ben.model.LOLChampion;
 
+/**
+ * This interface is needed to make the methods in LOLChampionServiceImpl with the annotation @Service
+ * @author benor
+ *
+ */
 @Service
 public interface LOLChampionService {
 

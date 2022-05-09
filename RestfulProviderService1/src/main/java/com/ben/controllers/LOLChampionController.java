@@ -17,6 +17,11 @@ import org.springframework.web.bind.annotation.RestController;
 import com.ben.model.LOLChampion;
 import com.ben.service.LOLChampionService;
 
+/**
+ * This class is what you put on Postman to call this API and their implementations
+ * @author benor
+ *
+ */
 @RestController
 @RequestMapping("/leagueOfLegends")
 public class LOLChampionController {

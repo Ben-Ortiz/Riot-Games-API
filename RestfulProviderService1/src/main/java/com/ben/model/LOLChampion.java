@@ -7,6 +7,12 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+/**
+ * This class is the model class of LOLCHampion, and with the annotations @Entity which makes the table,
+ * and the @Id makes the primary key the id.
+ * @author benor
+ *
+ */
 @Entity
 public class LOLChampion {
 

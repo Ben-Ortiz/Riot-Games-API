@@ -9,6 +9,11 @@ import org.springframework.stereotype.Service;
 import com.ben.model.LOLChampion;
 import com.ben.repository.LOLChampionRepository;
 
+/**
+ * This class implements the LOLChampionService class with the annotation @Service 
+ * @author benor
+ *
+ */
 @Service
 public class LOLChampionServiceImpl implements LOLChampionService {
 
