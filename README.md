@@ -1,4 +1,4 @@
-# Benedict_Ortiz_p1
+# Riot-Games-API
 - LOLChampionProviderRestAPI
 	- A RESTful API that provides character data from the game League of Legends.
 - ValoAgentProviderSoapAPI 
