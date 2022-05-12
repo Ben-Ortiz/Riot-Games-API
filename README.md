@@ -1,4 +1,7 @@
 # Benedict_Ortiz_p1
-- RestfulProviderService1 is a RESTful API that provides character data from the game League of Legends.
-- SoapProviderService1 is a SOAP API that provides character data from the game Valorant.
-- RestfulConsumerService1 is a RESTful API that is consuming RestfulProviderService1 and SoapProviderService1.
+- LOLChampionProviderRestAPI
+	- A RESTful API that provides character data from the game League of Legends.
+- ValoAgentProviderSoapAPI 
+	- A SOAP API that provides character data from the game Valorant.
+- GameConsumerRestAPI
+	- A RESTful API that is consuming LOLChampionProviderRestAPI and ValoAgentProviderSoapAPI.
