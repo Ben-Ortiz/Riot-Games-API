@@ -9,6 +9,17 @@
 - GameConsumerRestAPI
 	- A RESTful API that is consuming LOLChampionProviderRestAPI and ValoAgentProviderSoapAPI.
 
+## Technologies Used
+- Java - Version 1.8
+- Spring Boot - Version 2.6.7
+- Spring Web - Version 2.6.7
+- Spring Data JPA - Version 2.6.4
+- PostgreSQL - Version 42.3.4
+- SL4J - Version 1.7.36
+- Spring Tool Suite - Version 4.14.0.RELEASE
+- Postman - Version 9.19.0
+- DBeaver - Version 22.0.3.202204170718
+
 ## What I learned
 - Spring Data JPA: How to create models and use Spring to make database tables in Postgres
 - Rest API: How to create a Rest API using the Spring Framework.
