@@ -1,4 +1,6 @@
 # Riot Games API
+
+## Project Description 
 - An API that provides character data from 2 provider APIs being consumed by 1 consumer API.
 - LOLChampionProviderRestAPI
 	- A RESTful API that provides character data from the game League of Legends.
