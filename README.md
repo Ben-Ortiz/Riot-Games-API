@@ -61,6 +61,8 @@ To test these endpoints, for example this endpoint,
 
 1. Open Postman and paste the URL with the appropriate request.   
 ![alt text](images/getLOLChamps.png)  
+    
+2. Hit send. 
 
 For ValoAgentProviderSoapAPI, a Soap API you need to provide a body formatted raw, and in XML and you can only do post requests.    
 To easily test this Soap Service use SOAP UI instead of Postman to make requests to this Soap Service.     
