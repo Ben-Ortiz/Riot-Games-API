@@ -33,6 +33,7 @@ To-do list
 - Improve logging to log relevant actions.
 
 ## Getting Started
+` git clone https://github.com/Ben-Ortiz/Riot-Games-API.git `
 
 ## What I learned
 - Spring Data JPA: How to create models and use Spring to make database tables in Postgres
