@@ -32,8 +32,12 @@ To-do list
 - Design better API design for the consumer API.
 - Improve logging to log relevant actions.
 
-## Getting Started
-` git clone https://github.com/Ben-Ortiz/Riot-Games-API.git `
+## Getting Started   
+    
+1. clone the project in a new folder of your choice.    
+` git clone https://github.com/Ben-Ortiz/Riot-Games-API.git `     
+    
+2. 
 
 ## What I learned
 - Spring Data JPA: How to create models and use Spring to make database tables in Postgres
