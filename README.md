@@ -42,7 +42,8 @@ To-do list
 ![alt text](images/restProviderPort.png)  
 ![alt text](images/soapProviderPort.png)  
 ![alt text](images/restConsumerPort.png)  
-4. Run the 3 programs, LOLChampionProviderRestAPI, ValoAgentProviderSoapAPI, and GameConsumerRestAPI.
+4. Run the 3 programs, LOLChampionProviderRestAPI, ValoAgentProviderSoapAPI, and GameConsumerRestAPI.   
+5. Add some dummy data in your aws db, or local db using DBeaver.   
 5. Run Postman to get ready to test your endpoints.   
 
 ## Usage  
@@ -56,7 +57,7 @@ PUT: http://localhost:8080/leagueOfLegends/champions/1,
 DELETE: http://localhost:8080/leagueOfLegends/champions?id=5.   
    
 For ValoAgentProviderSoapAPI, a Soap API you need to provide a body formatted raw, and in XML and you can only do post requests.    
-POST: 
+POST:   
 `<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.ben.com/">
    <soapenv:Header/>
    <soapenv:Body>
