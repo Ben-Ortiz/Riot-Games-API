@@ -49,7 +49,7 @@ To-do list
 ## Usage  
   
 These are the endpoints that are supported in the program.   
-For LOLChampionProviderRestAPI,   
+- For LOLChampionProviderRestAPI,   
 POST: ` http://localhost:8080/leagueOfLegends/postChampion `,   
 GET: ` http://localhost:8080/leagueOfLegends/champions `,   
 GET: ` http://localhost:8080/leagueOfLegends/champions/1 ` ,   
@@ -64,7 +64,7 @@ To test these endpoints, for example this endpoint,
     
 2. Hit send. 
 
-For ValoAgentProviderSoapAPI, a Soap API you need to provide a body formatted raw, and in XML and you can only do post requests.    
+- For ValoAgentProviderSoapAPI, a Soap API you need to provide a body formatted raw, and in XML and you can only do post requests.    
 To easily test this Soap Service use SOAP UI instead of Postman to make requests to this Soap Service.     
 
 1. First you need to get the WSDL URL.   
