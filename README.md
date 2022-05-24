@@ -42,7 +42,38 @@ To-do list
 ![alt text](images/restProviderPort.png)  
 ![alt text](images/soapProviderPort.png)  
 ![alt text](images/restConsumerPort.png)  
-4. jj
+4. Run the 3 programs, LOLChampionProviderRestAPI, ValoAgentProviderSoapAPI, and GameConsumerRestAPI.
+5. Run Postman to get ready to test your endpoints.   
+
+## Usage  
+  
+These are the endpoints that are supported in the program.   
+For LOLChampionProviderRestAPI,   
+POST: http://localhost:8080/leagueOfLegends/postChampion,   
+GET: http://localhost:8080/leagueOfLegends/champions,   
+GET: http://localhost:8080/leagueOfLegends/champions/1,   
+PUT: http://localhost:8080/leagueOfLegends/champions/1,   
+DELETE: http://localhost:8080/leagueOfLegends/champions?id=5.   
+   
+For ValoAgentProviderSoapAPI, a Soap API you need to provide a body formatted raw, and in XML and you can only do post requests.    
+POST: 
+`<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.ben.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:saveValoAgent>
+         <!--Optional:-->
+         <arg0>
+            <id>1</id>
+            <!--Optional:-->
+            <valoName>Breach</valoName>
+         </arg0>
+      </ser:saveValoAgent>
+   </soapenv:Body>
+</soapenv:Envelope>
+`
+
+   
+   
 ## What I learned
 - Spring Data JPA: How to create models and use Spring to make database tables in Postgres
 - Rest API: How to create a Rest API using the Spring Framework.
