@@ -58,10 +58,20 @@ DELETE: http://localhost:8080/leagueOfLegends/champions?id=5.
    
 For ValoAgentProviderSoapAPI, a Soap API you need to provide a body formatted raw, and in XML and you can only do post requests.    
 To easily test this Soap Service use SOAP UI instead of Postman to make requests to this Soap Service.     
-First you need to get the WSDL URL.   
-To get that you need to go to this url:    
-` http://localhost:8081/soap-service `
 
+1. First you need to get the WSDL URL.   
+To get that you need to go to this url:    
+` http://localhost:8081/soap-service `    
+Then click this link
+![alt text](images/WSDL-url.png)  
+There you will find the link for your WSDL.    
+` http://localhost:8081/soap-service/valoagent-service?wsdl `
+   
+2. Open SOAP UI. Paste that URL when you go to File -> create a New Soap Project.  
+![alt text](images/SOAPUI-setup.png)  
+   
+3. You will see your endpoints generated to the left of SOAP UI
+![alt text](images/SOAPUI-setup2.png)  
    
    
 ## What I learned
