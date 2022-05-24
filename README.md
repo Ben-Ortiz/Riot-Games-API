@@ -73,6 +73,8 @@ There you will find the link for your WSDL.
 3. You will see your endpoints generated to the left of SOAP UI   
 ![alt text](images/SOAPUI-setup2.png)  
    
+4. You can test your endpoints in SOAP UI by adding a number in the first ? and a string name in the second ?.   
+![alt text](images/saveValoAgent.png)  
    
 ## What I learned
 - Spring Data JPA: How to create models and use Spring to make database tables in Postgres
