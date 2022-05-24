@@ -57,21 +57,10 @@ PUT: http://localhost:8080/leagueOfLegends/champions/1,
 DELETE: http://localhost:8080/leagueOfLegends/champions?id=5.   
    
 For ValoAgentProviderSoapAPI, a Soap API you need to provide a body formatted raw, and in XML and you can only do post requests.    
-POST:   
-`<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.ben.com/">
-   <soapenv:Header/>
-   <soapenv:Body>
-      <ser:saveValoAgent>
-         <!--Optional:-->
-         <arg0>
-            <id>1</id>
-            <!--Optional:-->
-            <valoName>Breach</valoName>
-         </arg0>
-      </ser:saveValoAgent>
-   </soapenv:Body>
-</soapenv:Envelope>
-`
+To easily test this Soap Service use SOAP UI instead of Postman to make requests to this Soap Service.     
+First you need to get the WSDL URL.   
+To get that you need to go to this url:    
+` http://localhost:8081/soap-service `
 
    
    
