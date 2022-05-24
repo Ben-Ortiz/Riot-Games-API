@@ -36,7 +36,6 @@ To-do list
     
 1. clone the project in a new folder of your choice.    
 ` git clone https://github.com/Ben-Ortiz/Riot-Games-API.git `     
-    
 2. 
 
 ## What I learned
