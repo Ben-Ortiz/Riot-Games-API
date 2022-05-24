@@ -56,6 +56,12 @@ GET: http://localhost:8080/leagueOfLegends/champions/1,
 PUT: http://localhost:8080/leagueOfLegends/champions/1,   
 DELETE: http://localhost:8080/leagueOfLegends/champions?id=5.   
    
+To test these endpoints, for example this endpoint,   
+` http://localhost:8080/leagueOfLegends/champions `   
+
+1. Open Postman and paste the URL with the appropriate request.   
+![alt text](images/getLOLChamps.png)  
+
 For ValoAgentProviderSoapAPI, a Soap API you need to provide a body formatted raw, and in XML and you can only do post requests.    
 To easily test this Soap Service use SOAP UI instead of Postman to make requests to this Soap Service.     
 
