@@ -50,11 +50,11 @@ To-do list
   
 These are the endpoints that are supported in the program.   
 For LOLChampionProviderRestAPI,   
-POST: http://localhost:8080/leagueOfLegends/postChampion,   
-GET: http://localhost:8080/leagueOfLegends/champions,   
-GET: http://localhost:8080/leagueOfLegends/champions/1,   
-PUT: http://localhost:8080/leagueOfLegends/champions/1,   
-DELETE: http://localhost:8080/leagueOfLegends/champions?id=5.   
+POST: ` http://localhost:8080/leagueOfLegends/postChampion `,   
+GET: ` http://localhost:8080/leagueOfLegends/champions `,   
+GET: ` http://localhost:8080/leagueOfLegends/champions/1 ` ,   
+PUT: ` http://localhost:8080/leagueOfLegends/champions/1 ` ,   
+DELETE: ` http://localhost:8080/leagueOfLegends/champions?id=5 ` .   
    
 To test these endpoints, for example this endpoint,   
 ` http://localhost:8080/leagueOfLegends/champions `   
