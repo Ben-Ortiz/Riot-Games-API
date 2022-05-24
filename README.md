@@ -37,7 +37,7 @@ To-do list
 1. clone the project in a new folder of your choice.    
 ` git clone https://github.com/Ben-Ortiz/Riot-Games-API.git `     
 2. edit the application.properties file in src/main/resources to connect an aws database for LOLChampionProviderRestAPI and ValoAgentProviderSoapAPI.   
-![alt text](images/database-connection.PNG)
+![alt text](\Game-API\images\database-connection.PNG)
 
 ## What I learned
 - Spring Data JPA: How to create models and use Spring to make database tables in Postgres
