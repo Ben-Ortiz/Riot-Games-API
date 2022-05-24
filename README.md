@@ -70,7 +70,7 @@ There you will find the link for your WSDL.
 2. Open SOAP UI. Paste that URL when you go to File -> create a New Soap Project.  
 ![alt text](images/SOAPUI-setup.png)  
    
-3. You will see your endpoints generated to the left of SOAP UI
+3. You will see your endpoints generated to the left of SOAP UI   
 ![alt text](images/SOAPUI-setup2.png)  
    
    
