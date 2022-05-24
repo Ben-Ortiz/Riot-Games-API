@@ -100,3 +100,4 @@ DELETE: ` http://localhost:6060/valoagent/deleteAgent?id=3 `
 To test these you test them the same as LOLChampionProviderRestAPI.   
    
 ## License
+This project using the following license: MIT License
