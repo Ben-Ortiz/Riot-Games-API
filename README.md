@@ -85,6 +85,20 @@ There you will find the link for your WSDL.
 4. You can test your endpoints in SOAP UI by adding a number in the first ? and a string name in the second ?.   
 ![alt text](images/saveValoAgent.png)  
    
+For GameConsumerRestAPI,   
+POST: ` http://localhost:6060/lolchampion/new `,   
+GET: ` http://localhost:6060/lolchampion/getall `,   
+GET: ` http://localhost:6060/lolchampion/get/1 `,   
+PUT: ` http://localhost:6060/lolchampion/update/3 `,   
+DELETE: ` http://localhost:6060/lolchampion/delete?id=1 `,   
+POST: ` http://localhost:6060/valoagent/postAgent `,   
+GET: ` http://localhost:6060/valoagent/testsoap `,   
+GET: ` http://localhost:6060/valoagent/getall `,   
+PUT: ` http://localhost:6060/valoagent/updateAgent `,   
+DELETE: ` http://localhost:6060/valoagent/deleteAgent?id=3 `   
+   
+To test these you test them the same as LOLChampionProviderRestAPI.  
+   
 ## What I learned
 - Spring Data JPA: How to create models and use Spring to make database tables in Postgres
 - Rest API: How to create a Rest API using the Spring Framework.
